@@ -1,0 +1,28 @@
+Superhero battle. Part 2
+
+6. В классе Weapon реализовать метод getRandomWeapon().
+Передать случайное оружие герою.
+7. В классе EvilCreature реализовать метод generateRandomEvilCreature().
+   !!!---- Устроить сражение между героями и случайными персонажами.
+
+
+8. Добавить у EvilCreature поле boolean isAngry.
+    Когда существо злое, его сила и
+    наносимый урон здоровью противника удваивается. ----!!!
+
+9. Добавить класс мага Mag с полями
+  	- int force
+  	- int protection
+    - int level;
+  Маг умеет сражаться, обладает силой и защитой (как EvilCreature)
+
+10. Добавить магу методы исцеления раненых персонажей:
+    heal(Character character), heal(Character[] characters)
+    методы должны быть вынесены в интерфейс HealingSkills
+
+
+11. Добавить магу методы увеличения силы персонажей
+    increaseForce(Superhero hero), increaseForce(Superhero[] heroes)
+    Сила увеличивается пропорционально уровню (поле level)
+    мага по формуле force = force + force * 0.1 * level
+    методы должны быть вынесены в интерфейс ReinforcementSkills
