@@ -14,7 +14,7 @@ public class Car extends Transport implements ElectricVehicle {
 
     @Override
     public int chargeBattery() {
-        return batteryLevel + 2;
+        return batteryLevel += 2;
     }
 
     @Override
