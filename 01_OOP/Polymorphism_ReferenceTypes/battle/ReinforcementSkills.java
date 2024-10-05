@@ -1,4 +1,4 @@
-package summary20240927.battle;
+package battle;
 
 public interface ReinforcementSkills {
     void increaseForce(Superhero hero);

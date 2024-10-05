@@ -1,4 +1,4 @@
-package summary20240927.battle;
+package battle;
 
 public class Mag extends Character implements HealingSkills, ReinforcementSkills {
     private int force;

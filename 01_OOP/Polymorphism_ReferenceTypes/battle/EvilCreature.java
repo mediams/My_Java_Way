@@ -1,4 +1,4 @@
-package summary20240927.battle;
+package battle;
 
 import java.util.Random;
 
