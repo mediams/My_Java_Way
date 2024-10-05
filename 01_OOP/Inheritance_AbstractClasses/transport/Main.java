@@ -14,6 +14,7 @@ public class Main {
         bicycle.fuelEfficiency();
         bicycle.getMaxSpeed();
         bicycle.move();
+        System.out.println(bicycle.getMaxSpeed());
 
 
     }
