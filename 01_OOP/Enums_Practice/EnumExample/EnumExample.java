@@ -5,7 +5,7 @@ public class EnumExample {
         System.out.println(Day.values());
         System.out.println();
 
-        for (Day day : Day.ordinal()) {
+        for (Day day : Day.values()) {
             System.out.println(day);
         }
 
