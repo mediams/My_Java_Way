@@ -18,6 +18,11 @@ public class Student {
         return subjects;
     }
 
+    public void knows(Subject... subjects) {
+
+    }
+
+
 
     @Override
     public String toString() {

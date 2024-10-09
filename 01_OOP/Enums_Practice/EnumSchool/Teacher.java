@@ -19,7 +19,7 @@ public class Teacher {
                 }
             }
             if (isSubjectTaught) {
-
+                Subject.values() = true;
                 System.out.printf("Студент %s занимается предметом %s%n", student.getName(), this.subject);
             } else {
                 System.out.printf("Студент %s не занимается предметом %s%n", student.getName(), this.subject);
