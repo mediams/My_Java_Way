@@ -1,22 +1,23 @@
 public class School {
     public static void main(String[] args) {
-        for (Subject subject : Subject.values()) {
-            System.out.println(subject);
-        }
+        Teacher mathTeacher = new Teacher("Rob", Subject.MATHEMATICS);
+        Teacher historyTeacher = new Teacher("Nina", Subject.HISTORY);
 
-        Teacher teacher = new Teacher("Ivan", Subject.MATHEMATICS);
-        System.out.println(teacher);
+        Student student1 = new Student("Bart");
+        Student student2 = new Student("Lisa");
+        Student student3 = new Student("Max");
 
-        Student student1 = new Student("Bart", Subject.MUSIC, Subject.MATHEMATICS);
-        Student student2 = new Student("Lisa", Subject.MUSIC, Subject.ART);
-        System.out.println(student1);
+        Student[] students = {student1, student2, student3};
 
-        teacher.teach(student1);
-
+        mathTeacher.teach(student1);
+        historyTeacher.teach(student2);
         System.out.println();
-        teacher.teach(student1, student2);
+        mathTeacher.teach(students);
+        System.out.println();
 
-        student1.knows();
-
+        for (Student student : students) {
+            System.out.println(student.getName() + " know " + Subject.MATHEMATICS + " (" + student.knows(Subject.MATHEMATICS) + ")");
+            System.out.println(student.getName() + " know " + Subject.HISTORY + " (" + student.knows(Subject.HISTORY) + ")");
+        }
     }
 }

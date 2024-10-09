@@ -1,34 +1,28 @@
-import java.util.Arrays;
-
-public class Student {
+class Student {
     private String name;
     private Subject[] subjects;
-    private boolean isTeach;
+    private int subjectCount;
 
-    public Student(String name, Subject... subjects) {
+    public Student(String name) {
         this.name = name;
-        this.subjects = subjects;
+        this.subjects = new Subject[10];
+        this.subjectCount = 0;
     }
 
     public String getName() {
         return name;
     }
 
-    public Subject[] getSubjects() {
-        return subjects;
+    public void learn(Subject subject) {
+            subjects[subjectCount++] = subject;
     }
 
-    public void knows(Subject... subjects) {
-
-    }
-
-
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", subjects=" + Arrays.toString(subjects) +
-                '}';
+    public boolean knows(Subject subject) {
+        for (int i = 0; i < subjectCount; i++) {
+            if (subjects[i] == subject) {
+                return true;
+            }
+        }
+        return false;
     }
 }
