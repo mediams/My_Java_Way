@@ -33,6 +33,6 @@ class Student {
     }
 
     public boolean knows(Subject subject) {
-        return subjects[subject.ordinal()] == subject;
+        return subjects[subject.ordinal()] == subject;  // GROße Frage!!!
     }
 }
