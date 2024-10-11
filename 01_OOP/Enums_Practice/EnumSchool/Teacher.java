@@ -8,12 +8,12 @@ class Teacher {
         this.subject = subject;
     }
 
-//    public void teach(Student student) {
-//        System.out.println("Teacher " + name + " teach " + student.getName() + " " + subject +".");
-//        student.learn(subject);
-//    }
+    public void teach(Student student) {
+        System.out.println("Teacher " + name + " teach " + student.getName() + " " + subject +".");
+        student.learn(subject);
+    }
 
-    public void teach(Student... students) {
+    public void teach(Student[] students) {
         for (Student student : students) {
             System.out.println("Teacher " + name + " teach " + student.getName() + " " + subject +".");
             student.learn(subject);
