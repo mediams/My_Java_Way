@@ -32,7 +32,7 @@ public class Main {
 /*
 Write a method to get the first and last occurrence of the specified items in a linked list.
 input:
-list = {1, 4, 3, 2, 1, 2, 2, 2, 2, 0}, element = 2
+list = {1, 4, 3, 2, 1, 2, 2, 0}, element = 2
 output:
 3 (index of the first occurrence), 6 (index of the last occurrence)
  */
