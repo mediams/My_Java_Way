@@ -1,5 +1,7 @@
 package set;
 
+import java.util.Comparator;
+
 public class Book implements Comparable<Book> {
     private BookData bookData;
     private boolean isOnSale;
@@ -42,5 +44,12 @@ public class Book implements Comparable<Book> {
     @Override
     public int compareTo(Book o) {
         return this.bookData.compareTo(o.bookData);
+    }
+
+    public static class BookComparatorByPrice implements Comparator<Book> {
+        @Override
+        public int compare(Book o1, Book o2) {
+            return Double.compare(o1.getPrice(), o2.getPrice());
+        }
     }
 }
