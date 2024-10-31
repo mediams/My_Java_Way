@@ -16,8 +16,6 @@ public class BinarySearch {
             } else if (array[mid] < element) {
                 left = mid + 1;
             } else right = mid - 1;
-
-            System.out.println("mid = " + mid);
         }
         return 0;
     }
