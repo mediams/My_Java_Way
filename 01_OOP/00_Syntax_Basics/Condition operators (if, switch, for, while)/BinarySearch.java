@@ -1,7 +1,7 @@
 public class BinarySearch {
     public static void main(String[] args) {
         int[] array = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        int element = 9;
+        int element = 1;
         System.out.println(searchBinary(array, element));
     }
 
@@ -17,6 +17,6 @@ public class BinarySearch {
                 left = mid + 1;
             } else right = mid - 1;
         }
-        return 0;
+        return -1;
     }
 }
