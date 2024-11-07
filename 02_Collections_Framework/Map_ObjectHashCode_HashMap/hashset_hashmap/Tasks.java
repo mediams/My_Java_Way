@@ -55,15 +55,40 @@ public class Tasks {
         Set<String> unique = new HashSet<>();
 //        Set<String> unique2 = new HashSet<>(Arrays.asList(array));
         System.out.println(array.length);
-        for (String s: array){
+        for (String s : array) {
             unique.add(s);
         }
         System.out.println(unique);
         System.out.println(unique.size());
+
+        Pizza pizza1 = new Pizza("Margarita", 2, "Peter", true);
+        Pizza pizza2 = new Pizza("4 Cheese", 5, "Mark", true);
+        Pizza pizza3 = new Pizza("Pepperoni", 3, "Peter", false);
+        Pizza pizza4 = new Pizza("Diablo", 1, "John", true);
+        Pizza pizza5 = new Pizza("With Pork", 6, "Peter", false);
+        Pizza pizza6 = new Pizza("Vegetarian", 2, "Steve", true);
+        Pizza pizza7 = new Pizza("Spicy", 1, "John", true);
+
+        List<Pizza> pizzas = List.of(pizza1, pizza2, pizza3, pizza4, pizza5, pizza6, pizza7);
+
+        HashMap<String, Integer> countOfPizza = new HashMap<>();
+        for (Pizza pizza : pizzas) {
+            countOfPizza.put(pizza.getCookName(), countOfPizza.getOrDefault(pizza.getCookName(), 0) + 1);
+//            if (pizzaCountByCook.containsKey(cookName)) {
+//                pizzaCountByCook.put(cookName, pizzaCountByCook.get(cookName) + 1);
+//            } else {
+//                pizzaCountByCook.put(cookName, 1);
+//            }
+
+        }
+        System.out.println(countOfPizza);
+
     }
 
     private static void putList(HashMap<String, Integer> list, String s, int i) {
         list.put(s, list.get(s) + i);
     }
 }
+//Using the Pizza class, create a HashMap where the key is the cook's name and the value is the number of pizzas he cooked.
+// Then create a Map<String, Set<String>>> where each cook will correspond to a set of unique pizzas that he cooked.
 
