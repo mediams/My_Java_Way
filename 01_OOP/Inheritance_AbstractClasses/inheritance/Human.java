@@ -1,4 +1,4 @@
-package my20241002.inheritance;
+package inheritance;
 
 public class Human extends Creature implements Walkable {
 

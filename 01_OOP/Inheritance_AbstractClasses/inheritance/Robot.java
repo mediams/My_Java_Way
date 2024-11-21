@@ -1,4 +1,4 @@
-package my20241002.inheritance;
+package inheritance;
 
 public class Robot implements Walkable, CatchingSkills {
     private String name;

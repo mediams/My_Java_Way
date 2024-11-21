@@ -9,7 +9,8 @@ public class BookService {
             return new Book[0];
         }
         return Arrays.stream(books)
-                .filter(book -> book.getAuthors().equals(author))
+                .filter(book -> Arrays.stream(book.getAuthors())
+                        .anyMatch(bookAuthor -> bookAuthor.equals(author)))
                 .toArray(Book[]::new);
     }
 

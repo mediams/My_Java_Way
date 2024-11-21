@@ -1,4 +1,5 @@
-package my20241002.inheritance;
+package inheritance;
+
 
 public class Dog extends Animal {
 

@@ -1,4 +1,4 @@
-package my20241002.inheritance;
+package inheritance;
 
 public class Cat extends Animal implements CatchingSkills{
 
