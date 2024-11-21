@@ -27,6 +27,11 @@ public class LibraryEx {
 
         Book[] resultBooks = bookService.filterBooksByAuthor(targetAuthor, books);
         Arrays.stream(resultBooks).forEach(System.out::println);
+
+        System.out.println("new Publisher(1, \"Publisher_1\")");
+        Publisher targetPublisher = new Publisher(1, "Publisher_1");
+        Arrays.stream(bookService.filterBooksByPublisher(targetPublisher, books)).forEach(System.out::println);
+
     }
 
 }
