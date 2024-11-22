@@ -32,6 +32,9 @@ public class LibraryEx {
         Publisher targetPublisher = new Publisher(1, "Publisher_1");
         Arrays.stream(bookService.filterBooksByPublisher(targetPublisher, books)).forEach(System.out::println);
 
-    }
+        System.out.println("int targetYear = 1997;");
+        int targetYear = 1997;
+        Arrays.stream(bookService.filterBooksAfterSpecifiedYear(targetYear, books)).forEach(System.out::println);
 
+    }
 }
