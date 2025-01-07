@@ -8,4 +8,11 @@ public class Publisher {
     public Publisher(String publisherName) {
         this.publisherName = publisherName;
     }
+
+    @Override
+    public String toString() {
+        return "Publisher{" +
+                "publisherName='" + publisherName + '\'' +
+                '}';
+    }
 }

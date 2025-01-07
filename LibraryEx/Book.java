@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.util.Arrays;
 
 public class Book {
     private static int id = 0; //unique identifier
@@ -26,5 +27,18 @@ public class Book {
         this.amountOfPages = amountOfPages;
         this.price = price;
         this.coverType = coverType;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "name='" + name + '\'' +
+                ", authors=" + Arrays.toString(authors) +
+                ", publisher=" + publisher +
+                ", publishingYear=" + publishingYear +
+                ", amountOfPages=" + amountOfPages +
+                ", price=" + price +
+                ", coverType=" + coverType +
+                '}';
     }
 }
