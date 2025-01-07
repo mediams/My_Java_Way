@@ -1,4 +1,4 @@
 public enum CoverType {
-    PAPERBOOK,
+    PAPERBACK,
     HARDCOVER
 }

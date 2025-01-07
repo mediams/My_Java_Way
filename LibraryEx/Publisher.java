@@ -1,11 +1,16 @@
 public class Publisher {
-    private static int id; //unique identifier
+    private int id; //unique identifier
     private String publisherName; //name of a publisher
 
     public Publisher() {
     }
 
     public Publisher(String publisherName) {
+        this.publisherName = publisherName;
+    }
+
+    public Publisher(int id, String publisherName) {
+        this.id = id;
         this.publisherName = publisherName;
     }
 

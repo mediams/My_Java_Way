@@ -2,7 +2,7 @@ import java.math.BigDecimal;
 import java.util.Arrays;
 
 public class Book {
-    private static int id = 0; //unique identifier
+    private int id; //unique identifier
 
     private String name; //name of a book
     private Author[] authors; //array of authors
@@ -12,14 +12,13 @@ public class Book {
     private BigDecimal price; //price of a book
     private CoverType coverType; //type of book binding, enum (Paperback, Hardcover)
 
-    static {
-        id++;
-    }
+
 
     public Book() {
     }
 
-    public Book(String name, Author[] authors, Publisher publisher, int publishingYear, int amountOfPages, BigDecimal price, CoverType coverType) {
+    public Book(int id, String name, Author[] authors, Publisher publisher, int publishingYear, int amountOfPages, BigDecimal price, CoverType coverType) {
+        this.id = id;
         this.name = name;
         this.authors = authors;
         this.publisher = publisher;
