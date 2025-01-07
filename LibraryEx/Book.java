@@ -40,4 +40,36 @@ public class Book {
                 ", coverType=" + coverType +
                 '}';
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Author[] getAuthors() {
+        return authors;
+    }
+
+    public Publisher getPublisher() {
+        return publisher;
+    }
+
+    public int getPublishingYear() {
+        return publishingYear;
+    }
+
+    public int getAmountOfPages() {
+        return amountOfPages;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public CoverType getCoverType() {
+        return coverType;
+    }
 }

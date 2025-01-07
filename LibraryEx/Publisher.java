@@ -20,4 +20,12 @@ public class Publisher {
                 "publisherName='" + publisherName + '\'' +
                 '}';
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getPublisherName() {
+        return publisherName;
+    }
 }

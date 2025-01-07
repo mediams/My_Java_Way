@@ -1,3 +1,4 @@
+
 public class Author {
     private int id; //unique identifier
     private String firstName; //author’s first name
@@ -18,5 +19,17 @@ public class Author {
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 '}';
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 }
