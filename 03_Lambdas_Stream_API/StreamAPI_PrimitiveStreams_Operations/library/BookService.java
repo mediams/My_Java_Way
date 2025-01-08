@@ -1,8 +1,10 @@
 package library;
 
+import mytasks.mylibrary.Author;
+import mytasks.mylibrary.Book;
+import mytasks.mylibrary.Publisher;
+
 import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Objects;
 
 public class BookService {
     public Book[] filterBooksByAuthor(Author author, Book[] books) {

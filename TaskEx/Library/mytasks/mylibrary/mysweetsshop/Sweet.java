@@ -1,4 +1,4 @@
-package sweets;
+package mytasks.mylibrary.mysweetsshop;
 
 public abstract class Sweet {
     private String name;

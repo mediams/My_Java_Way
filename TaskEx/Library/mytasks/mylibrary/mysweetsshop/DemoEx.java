@@ -1,4 +1,4 @@
-package sweets;
+package mytasks.mylibrary.mysweetsshop;
 
 public class DemoEx {
     public static void main(String[] args) {

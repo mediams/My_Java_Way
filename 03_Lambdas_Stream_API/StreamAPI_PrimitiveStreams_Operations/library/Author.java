@@ -1,4 +1,4 @@
-package library;
+package I:\My_Java_Way\03_Lambdas_Stream_API\StreamAPI_PrimitiveStreams_Operations\library;
 
 import java.util.Objects;
 
@@ -26,7 +26,7 @@ public class Author {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Author author = (Author) o;
+        mytasks.mylibrary.Author author = (mytasks.mylibrary.Author) o;
         return id == author.id && Objects.equals(firstName, author.firstName) && Objects.equals(lastName, author.lastName);
     }
 

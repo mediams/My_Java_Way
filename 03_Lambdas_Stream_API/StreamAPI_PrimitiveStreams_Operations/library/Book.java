@@ -1,5 +1,9 @@
 package library;
 
+import mytasks.mylibrary.Author;
+import mytasks.mylibrary.CoverType;
+import mytasks.mylibrary.Publisher;
+
 import java.math.BigDecimal;
 import java.util.Arrays;
 

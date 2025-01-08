@@ -1,4 +1,4 @@
-package library;
+package mytasks.mylibrary;
 
 public class Author {
     private int id; //unique identifier

@@ -1,9 +1,13 @@
 package library;
 
+import mytasks.mylibrary.Author;
+import mytasks.mylibrary.Book;
+import mytasks.mylibrary.BookService;
+import mytasks.mylibrary.CoverType;
+import mytasks.mylibrary.Publisher;
+
 import java.math.BigDecimal;
 import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Stream;
 
 public class LibraryEx {
     public static void main(String[] args) {

@@ -1,7 +1,8 @@
 package sweets;
 
+import mytasks.mylibrary.mysweetsshop.Sweet;
+
 import java.util.Arrays;
-import java.util.stream.Stream;
 
 public class Present {
     private Sweet[] sweets = new Sweet[10];

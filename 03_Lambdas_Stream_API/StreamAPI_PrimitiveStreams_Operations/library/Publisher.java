@@ -31,7 +31,7 @@ public class Publisher {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Publisher publisher = (Publisher) o;
+        mytasks.mylibrary.Publisher publisher = (mytasks.mylibrary.Publisher) o;
         return id == publisher.id && Objects.equals(publisherName, publisher.publisherName);
     }
 

@@ -1,6 +1,6 @@
-package sweets;
+package mytasks.mylibrary.mysweetsshop;
 
-public class Candy extends Sweet{
+public class Candy extends Sweet {
     public Candy(String name, double weight, double sugarWeight) {
         super(name, weight, sugarWeight);
     }

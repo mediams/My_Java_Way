@@ -1,4 +1,4 @@
-package library;
+package mytasks.mylibrary;
 
 import java.math.BigDecimal;
 import java.util.Arrays;

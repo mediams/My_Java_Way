@@ -1,4 +1,4 @@
-package library;
+package mytasks.mylibrary;
 
 public class BookService {
     public Book[] filterBooksByAuthor(Author author, Book[] books) {

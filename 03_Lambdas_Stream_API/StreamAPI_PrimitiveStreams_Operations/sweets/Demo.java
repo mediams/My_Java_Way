@@ -1,5 +1,10 @@
 package sweets;
 
+import mytasks.mylibrary.mysweetsshop.Candy;
+import mytasks.mylibrary.mysweetsshop.Cookie;
+import mytasks.mylibrary.mysweetsshop.Lollipop;
+import mytasks.mylibrary.mysweetsshop.Present;
+
 public class Demo {
     public static void main(String[] args) {
         Candy candy = new Candy();
