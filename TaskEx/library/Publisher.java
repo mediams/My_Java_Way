@@ -1,3 +1,5 @@
+package library;
+
 public class Publisher {
     private int id; //unique identifier
     private String publisherName; //name of a publisher
