@@ -1,4 +1,4 @@
-package I:\My_Java_Way\03_Lambdas_Stream_API\StreamAPI_PrimitiveStreams_Operations\library;
+package library;
 
 import java.util.Objects;
 
