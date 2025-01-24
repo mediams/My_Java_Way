@@ -1,0 +1,32 @@
+Task: Create a library management system using SOLID principles
+
+
+Task description:
+You work in a company that develops library management software.
+Your task is to create a class system that follows SOLID principles
+and allows efficient library management.
+
+The main functions of the system include adding new books,
+accounting for borrowed and returned books.
+
+Class description:
+
+Book:
+Fields: title, author, isbn, availableCopies
+
+User:
+Fields: name, userId, borrowedBooks
+Methods: borrowBook(Book book), returnBook(Book book) - methods for adding and removing books from borrowedBooks
+
+Library:
+Fields: books, users
+Methods: addBook(Book book), removeBook(Book book), registerUser(User user), findBookByIsbn(String isbn
+
+
+
+)LibraryManager
+
+:Fields
+:library
+Methods: borrowBook(String isbn, User user), returnBook(String isbn, User user
+), addBook(Book book), removeBook(Book book), registerUser(User user)
