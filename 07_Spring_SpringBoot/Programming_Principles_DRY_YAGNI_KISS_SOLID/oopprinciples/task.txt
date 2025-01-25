@@ -20,11 +20,9 @@ Methods: borrowBook(Book book), returnBook(Book book) - methods for adding and r
 
 Library:
 Fields: books, users
-Methods: addBook(Book book), removeBook(Book book), registerUser(User user), findBookByIsbn(String isbn
+Methods: addBook(Book book), removeBook(Book book), registerUser(User user), findBookByIsbn(String isbn)
 
-
-
-)LibraryManager
+LibraryManager
 
 :Fields
 :library
