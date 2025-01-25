@@ -13,8 +13,16 @@ import java.util.List;
 @NoArgsConstructor
 @Getter
 public class Library {
-    private final List<Book> books = new ArrayList<>();
-    private final List<User> users = new ArrayList<>();
+    private final static List<Book> books = new ArrayList<>();
+    private final static List<User> users = new ArrayList<>();
+
+    static {
+        books.add(1, new Book("Maria sleeps", "John", "123-56", 5));
+        books.add(2, new Book("Racket up", "Smith", "148-56", 0));
+        books.add(3, new Book("London is true", "Igor", "559-46", 3));
+
+        users.add(1, new User("Vladimir", "01"));
+    }
 
     public void addBook(Book book) {
         books.add(book);
@@ -34,7 +42,7 @@ public class Library {
         users.add(user);
     }
 
-    private Book findBookByIsbn(String isbn){
+    public static Book findBookByIsbn(String isbn){
         return books.stream()
                 .filter(book -> book.getIsbn()
                         .equals(isbn)).findFirst().orElse(null);

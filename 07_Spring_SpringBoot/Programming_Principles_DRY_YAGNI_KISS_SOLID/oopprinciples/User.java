@@ -19,11 +19,20 @@ public class User {
     private final List<Book> borrowedBooks = new ArrayList<>();
 
     public void borrowBook(Book book) {
-        borrowedBooks.add(book);
+        if (book.getAvailableCopies() > 0) {
+            borrowedBooks.add(book);
+            book.setAvailableCopies(book.getAvailableCopies() - 1);
+        }else System.out.println("Book is not available");
     }
 
     public void returnBook(Book book) {
-        borrowedBooks.remove(book);
+        if (book == null) {
+            System.out.println("Book not founded.");
+            return;
+        } else if (borrowedBooks.contains(book)) {
+            borrowedBooks.remove(book);
+            book.setAvailableCopies(book.getAvailableCopies() + 1);
+        }else System.out.println("Book is not borrowed.");
     }
 
     @Override
