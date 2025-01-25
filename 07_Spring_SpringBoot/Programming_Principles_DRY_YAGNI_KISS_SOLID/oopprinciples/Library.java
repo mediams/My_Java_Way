@@ -12,30 +12,31 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-@Setter
 public class Library {
-    private List<Book> books = new ArrayList<>();
-    private List<User> users = new ArrayList<>();
-
-
+    private final List<Book> books = new ArrayList<>();
+    private final List<User> users = new ArrayList<>();
 
     public void addBook(Book book) {
         books.add(book);
     }
-    private void removeBook(Book book) {
-        books.remove(book);
+
+    public void removeBook(Book book) {
+        if(book == null) {
+            System.out.println("Book not founded.");
+            return;
+        } else {
+            books.remove(book);
+            System.out.println("Book removed.");
+        }
     }
-    private void registerUser(User user) {
+
+    public void registerUser(User user) {
         users.add(user);
     }
+
     private Book findBookByIsbn(String isbn){
-        for(Book book : books){
-            if(book.getIsbn().equals(isbn)){
-                return book;
-            }
-        }
-        return null;
+        return books.stream()
+                .filter(book -> book.getIsbn()
+                        .equals(isbn)).findFirst().orElse(null);
     }
-
-
 }

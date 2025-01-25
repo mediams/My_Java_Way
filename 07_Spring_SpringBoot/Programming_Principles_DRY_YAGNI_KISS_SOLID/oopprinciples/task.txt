@@ -22,9 +22,7 @@ Library:
 Fields: books, users
 Methods: addBook(Book book), removeBook(Book book), registerUser(User user), findBookByIsbn(String isbn)
 
-LibraryManager
-
-:Fields
-:library
+LibraryManager:
+Fields:library
 Methods: borrowBook(String isbn, User user), returnBook(String isbn, User user
 ), addBook(Book book), removeBook(Book book), registerUser(User user)

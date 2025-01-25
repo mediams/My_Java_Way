@@ -16,7 +16,7 @@ import java.util.Objects;
 public class User {
     public String name;
     private String userId;
-    private List<Book> borrowedBooks = new ArrayList<>();
+    private final List<Book> borrowedBooks = new ArrayList<>();
 
     public void borrowBook(Book book) {
         borrowedBooks.add(book);
