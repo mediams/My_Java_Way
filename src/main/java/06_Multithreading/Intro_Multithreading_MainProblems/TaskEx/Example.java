@@ -1,5 +1,3 @@
-package TaskEx;
-
 public class Example {
     public static void main(String[] args) {
         Message message = new Message("process it");

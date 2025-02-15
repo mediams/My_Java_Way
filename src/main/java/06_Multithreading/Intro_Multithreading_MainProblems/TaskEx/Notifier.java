@@ -1,5 +1,3 @@
-package TaskEx;
-
 import java.util.concurrent.TimeUnit;
 
 public class Notifier implements Runnable{

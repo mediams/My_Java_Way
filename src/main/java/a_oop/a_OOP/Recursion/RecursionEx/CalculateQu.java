@@ -1,4 +1,4 @@
-package RecursionEx;
+package a_oop.a_OOP.Recursion.RecursionEx;
 
 public class CalculateQu {
     public static void main(String[] args) {

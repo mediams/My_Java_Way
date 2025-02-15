@@ -1,5 +1,3 @@
-package GenericDemo;
-
 public interface MyList<T> {
     void add(T t);
 

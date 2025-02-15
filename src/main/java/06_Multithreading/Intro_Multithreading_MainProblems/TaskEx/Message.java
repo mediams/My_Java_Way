@@ -1,5 +1,3 @@
-package TaskEx;
-
 public class Message {
     private String message;
 

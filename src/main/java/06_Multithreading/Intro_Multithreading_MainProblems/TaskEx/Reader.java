@@ -1,5 +1,3 @@
-package TaskEx;
-
 public class Reader implements Runnable {
     private Message message;
 
