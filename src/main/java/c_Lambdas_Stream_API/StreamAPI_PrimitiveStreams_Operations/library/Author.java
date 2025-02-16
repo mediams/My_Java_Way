@@ -22,16 +22,16 @@ public class Author {
                 '}';
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        mytasks.mylibrary.Author author = (mytasks.mylibrary.Author) o;
-        return id == author.id && Objects.equals(firstName, author.firstName) && Objects.equals(lastName, author.lastName);
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        mytasks.mylibrary.Author author = (mytasks.mylibrary.Author) o;
+//        return id == author.id && Objects.equals(firstName, author.firstName) && Objects.equals(lastName, author.lastName);
+//    }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, firstName, lastName);
-    }
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(id, firstName, lastName);
+//    }
 }
