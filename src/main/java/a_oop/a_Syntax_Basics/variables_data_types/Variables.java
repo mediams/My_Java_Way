@@ -52,5 +52,9 @@ public class Variables {
         System.out.println(charOne * 2); //97 * 2
         System.out.println(charOne + 2);
 
+        int result = 10;
+        result -= 5;
+        System.out.println(result);
+
     }
 }
