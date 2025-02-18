@@ -34,9 +34,23 @@ public class Variables {
         float myFloat = 5.25f;
         System.out.println(myFloat);
 
-        System.out.println((5f/2f));
-        System.out.println(7f/3f);
-        System.out.println(7d/3d);
+        System.out.println((5f / 2f));
+        System.out.println(7f / 3f);
+        System.out.println(7d / 3d);
+
+        double pound = 0.45359237;
+        System.out.println(200 * pound);
+        System.out.println(0.5 * pound);
+
+        char myChar = 'c';
+        System.out.println('\u0044');
+        myChar = 68;
+        System.out.println(myChar);
+
+        System.out.println("**********");
+        char charOne = 'a';
+        System.out.println(charOne * 2); //97 * 2
+        System.out.println(charOne + 2);
 
     }
 }
