@@ -1,3 +1,5 @@
+package a_oop.a_Syntax_Basics.condition_operators_if_switch_for_while;
+
 public class BinarySearch {
     public static void main(String[] args) {
         int[] array = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};

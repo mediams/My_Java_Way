@@ -1,3 +1,5 @@
+package a_oop.a_Syntax_Basics.condition_operators_if_switch_for_while;
+
 public class LenearSearch {
     public static void main(String[] args) {
         int[] array = new int[]{1, 2, 5, 4, 3, 7, 6};
