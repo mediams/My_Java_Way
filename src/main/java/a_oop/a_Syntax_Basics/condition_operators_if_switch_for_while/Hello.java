@@ -38,5 +38,15 @@ public class Hello {
         System.out.println(flag);
         s = flag ? "true" : "false";
         System.out.println(s);
+
+        int numberT = 257;
+        int sumT = 0;
+
+        while (numberT > 0) {
+            sumT += numberT % 10;
+            numberT = numberT / 10;
+        }
+
+        System.out.println("sum: " + sumT);
     }
 }
