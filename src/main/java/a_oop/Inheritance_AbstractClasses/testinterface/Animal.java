@@ -1,4 +1,4 @@
-package testinterface;
+package a_oop.Inheritance_AbstractClasses.testinterface;
 
 public class Animal implements Info {
     public int id;

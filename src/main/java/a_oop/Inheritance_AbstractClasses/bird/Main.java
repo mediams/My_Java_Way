@@ -1,4 +1,4 @@
-package bird;
+package a_oop.Inheritance_AbstractClasses.bird;
 
 public class Main {
     public static void main(String[] args) {
