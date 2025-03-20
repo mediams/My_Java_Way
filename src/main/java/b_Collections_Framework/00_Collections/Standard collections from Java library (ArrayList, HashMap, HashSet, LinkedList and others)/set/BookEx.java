@@ -1,13 +1,13 @@
-package set;
-
+/*
 import java.util.*;
+import c_Lambdas_Stream_API.StreamAPI_PrimitiveStreams_Operations.library.Book;
 
 public class BookEx {
     public static void main(String[] args) {
-        List<Book> books = new ArrayList<>();
+        List<set.Book> books = new ArrayList<>();
         books.add(new Book(new BookData("Book 1", "Tom Smith"), true, 21.0, 29));
-        books.add(new Book(new BookData("Book 2", "Tom Smith"), true, 11.0, 29));
-        books.add(new Book(new BookData("Book 2", "Tom Smith 1"), false, 21.0, 29));
+        books.add(new c_Lambdas_Stream_API.StreamAPI_PrimitiveStreams_Operations.library.Book(new BookData("Book 2", "Tom Smith"), true, 11.0, 29));
+        books.add(new c_Lambdas_Stream_API.StreamAPI_PrimitiveStreams_Operations.library.Book(new BookData("Book 2", "Tom Smith 1"), false, 21.0, 29));
         books.add(new Book(new BookData("Book 1", "Tom Smith 2"), true, 12.0, 29));
         books.add(new Book(new BookData("Book 1", "Tom Smith"), false, 21.0, 8));
 
@@ -32,3 +32,4 @@ public class BookEx {
         }
     }
 }
+*/

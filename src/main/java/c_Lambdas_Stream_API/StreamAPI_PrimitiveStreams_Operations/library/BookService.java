@@ -1,4 +1,5 @@
-package library;
+/*
+package c_Lambdas_Stream_API.StreamAPI_PrimitiveStreams_Operations.library;
 
 import mytasks.mylibrary.Author;
 import mytasks.mylibrary.Book;
@@ -36,3 +37,4 @@ public class BookService {
     }
 
 }
+*/
