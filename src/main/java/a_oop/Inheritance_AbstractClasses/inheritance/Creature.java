@@ -1,4 +1,4 @@
-package inheritance;
+package a_oop.Inheritance_AbstractClasses.inheritance;
 
 public abstract class Creature {
     private String name;

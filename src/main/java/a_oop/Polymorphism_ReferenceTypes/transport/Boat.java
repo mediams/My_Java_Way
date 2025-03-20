@@ -1,4 +1,4 @@
-package transport;
+package a_oop.Polymorphism_ReferenceTypes.transport;
 
 public class Boat extends TransportNew implements Repairable{
     public Boat(int speed, int capacity) {

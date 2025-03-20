@@ -1,6 +1,6 @@
-package testinterface;
+package a_oop.Inheritance_AbstractClasses.testinterface;
 
-public class Test {
+class Test {
     public static void main(String[] args) {
         Animal animal = new Animal(1);
         Person person = new Person("Bob");

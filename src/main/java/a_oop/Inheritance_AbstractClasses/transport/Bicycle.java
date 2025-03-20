@@ -1,4 +1,4 @@
-package transport;
+package a_oop.Inheritance_AbstractClasses.transport;
 
 public class Bicycle extends Transport {
     public Bicycle(String name, int maxSpeed) {

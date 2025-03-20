@@ -1,4 +1,4 @@
-package bird;
+package a_oop.Inheritance_AbstractClasses.bird;
 
 public class Mockingjay extends Bird {
 

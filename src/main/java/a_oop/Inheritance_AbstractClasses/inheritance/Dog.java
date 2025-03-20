@@ -1,4 +1,4 @@
-package inheritance;
+package a_oop.Inheritance_AbstractClasses.inheritance;
 
 
 public class Dog extends Animal {

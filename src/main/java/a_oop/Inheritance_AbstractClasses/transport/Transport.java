@@ -1,4 +1,4 @@
-package transport;
+package a_oop.Inheritance_AbstractClasses.transport;
 
 public abstract class Transport {
     private String name;

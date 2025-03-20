@@ -1,4 +1,4 @@
-package transport;
+package a_oop.Polymorphism_ReferenceTypes.transport;
 
 public abstract class TransportNew {
     private int speed;
