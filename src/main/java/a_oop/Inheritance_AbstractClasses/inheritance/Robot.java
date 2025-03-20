@@ -1,4 +1,4 @@
-package inheritance;
+package a_oop.Inheritance_AbstractClasses.inheritance;
 
 public class Robot implements Walkable, CatchingSkills {
     private String name;
