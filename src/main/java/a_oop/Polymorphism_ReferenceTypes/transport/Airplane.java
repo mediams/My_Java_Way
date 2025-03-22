@@ -1,4 +1,4 @@
-package transport;
+package a_oop.Polymorphism_ReferenceTypes.transport;
 
 public class Airplane extends TransportNew{
     public Airplane(int speed, int capacity) {

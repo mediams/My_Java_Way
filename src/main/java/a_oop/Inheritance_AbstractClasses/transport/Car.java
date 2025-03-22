@@ -1,4 +1,4 @@
-package transport;
+package a_oop.Inheritance_AbstractClasses.transport;
 
 public class Car extends Transport implements ElectricVehicle {
     private int batteryLevel;

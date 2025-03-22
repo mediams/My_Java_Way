@@ -1,8 +1,4 @@
-package library;
-
-import mytasks.mylibrary.Author;
-import mytasks.mylibrary.CoverType;
-import mytasks.mylibrary.Publisher;
+package c_Lambdas_Stream_API.StreamAPI_PrimitiveStreams_Operations.library;
 
 import java.math.BigDecimal;
 import java.util.Arrays;

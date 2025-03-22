@@ -1,4 +1,4 @@
-package inheritance;
+package a_oop.Inheritance_AbstractClasses.inheritance;
 
 public class Cat extends Animal implements CatchingSkills{
 

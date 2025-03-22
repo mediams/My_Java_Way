@@ -1,4 +1,4 @@
-package inheritance;
+package a_oop.Inheritance_AbstractClasses.inheritance;
 
 public class Human extends Creature implements Walkable {
 
