@@ -1,6 +1,6 @@
 package a_oop.inheritance_encapsulation_polymorphism_and_abstraction.worker;
 
-public class Main extends Object{
+public class Main{
     public static void main(String[] args) {
         Employee bro = new Employee("Bro", "11/12/1980", "10/10/2020");
         System.out.println(bro);
@@ -13,6 +13,14 @@ public class Main extends Object{
 
         bro2.retire();
         System.out.println(bro2.getName() + "'s Paycheck = $" + bro2.collectPay());
+
+        System.out.println("""
+                Text
+                    Example
+                """);
+
+        int year0fBirth = 2023;
+        System.out.printf("Age= %d%n, Birth year age", year0fBirth);
 
 
 
