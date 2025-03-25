@@ -23,11 +23,11 @@ build/
 
 .DS_Store
 Thumbs.db
-/src/main/java/04_Input_Output_Java/
-/src/main/java/05_General_Repetition/
-/src/main/java/06_Multithreading/
-/src/main/java/07_Spring_SpringBoot/
-/src/main/java/07_Utility_Classes/
-/src/main/java/a_oop/00_OOP/Interfaces and abstract classes/
-/src/main/java/b_Collections_Framework/
-/src/main/java/c_Lambdas_Stream_API/
+/src/main/java/04_Input_Output_Java/*
+/src/main/java/05_General_Repetition/*
+/src/main/java/06_Multithreading/*
+/src/main/java/07_Spring_SpringBoot/*
+/src/main/java/07_Utility_Classes/*
+/src/main/java/a_oop/00_OOP/Interfaces and abstract classes/*
+/src/main/java/b_Collections_Framework/*
+/src/main/java/c_Lambdas_Stream_API/*
