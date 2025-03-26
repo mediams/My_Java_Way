@@ -1,4 +1,4 @@
-package car;
+package a_oop.inheritance_abstractClasses.car;
 
 public abstract class Car {
     private String model;
