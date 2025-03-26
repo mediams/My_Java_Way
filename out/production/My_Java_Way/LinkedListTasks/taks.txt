@@ -1,7 +1,0 @@
-Create a DataStorage class with fields
-    Data data;
-	Double weight;
-    int version;
-	boolean isActive;
-Where Data is a class with String data, int count fields.
-Sort the list of DataStorage taking into account all parameters.

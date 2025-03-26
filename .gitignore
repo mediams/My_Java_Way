@@ -17,6 +17,7 @@ build/
 .env
 .DS_Store
 Thumbs.db
+
 /src/main/java/04_Input_Output_Java/*
 /src/main/java/05_General_Repetition/*
 /src/main/java/06_Multithreading/*
