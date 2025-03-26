@@ -1,4 +1,4 @@
-package battle;
+package a_oop.polymorphism_referenceTypes.battle;
 
 public class Mag extends Character implements HealingSkills, ReinforcementSkills {
     private int force;
