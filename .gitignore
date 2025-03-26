@@ -2,25 +2,19 @@
 Bücher
 Offline_Materialen
 myenv/
+/out/
 _Base
 _Starta Institut — ярлык.lnk
 *.lnk
 sync_repo.bat
 .idea/
-
 *.iml
-
 *.class
-
 *.log
 *.bat
-
 target/
-
 build/
-
 .env
-
 .DS_Store
 Thumbs.db
 /src/main/java/04_Input_Output_Java/*
