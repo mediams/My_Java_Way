@@ -1,4 +1,4 @@
-package a_oop.Polymorphism_ReferenceTypes.transport;
+package a_oop.polymorphism_referenceTypes.transport;
 
 public class CarNew extends TransportNew implements Repairable{
     public CarNew(int speed, int capacity) {
