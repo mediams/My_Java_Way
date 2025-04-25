@@ -1,6 +1,4 @@
-package c_Lambdas_Stream_API.StreamAPI_PrimitiveStreams_Operations.library;
-
-import java.util.Objects;
+package c_lambdas_stream_api.StreamAPI_PrimitiveStreams_Operations.library;
 
 public class Publisher {
     int id; // - unique identifier

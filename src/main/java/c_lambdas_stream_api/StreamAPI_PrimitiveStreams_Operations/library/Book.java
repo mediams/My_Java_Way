@@ -1,4 +1,4 @@
-package c_Lambdas_Stream_API.StreamAPI_PrimitiveStreams_Operations.library;
+package c_lambdas_stream_api.StreamAPI_PrimitiveStreams_Operations.library;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
