@@ -1,4 +1,4 @@
-package e_general_repetition.unittest_junit_mockito;
+package e_general_repetition.unittest_junit_mockito.bankaccount;
 
 public class Main {
     public static void main(String[] args) {

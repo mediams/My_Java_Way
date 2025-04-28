@@ -1,4 +1,4 @@
-package e_general_repetition.unittest_junit_mockito;
+package e_general_repetition.unittest_junit_mockito.bankaccount;
 
 import java.math.BigDecimal;
 
@@ -23,6 +23,9 @@ public class BankAccount {
     }
 
     public BigDecimal withdraw(BigDecimal amount, boolean branch) {
+        if (amount.compareTo(new BigDecimal("500")) > 0 && !branch) {
+            throw new IllegalArgumentException("You can't withdraw more than 500 outside the branch");
+        }
         balance = balance.subtract(amount);
         return balance;
     }
