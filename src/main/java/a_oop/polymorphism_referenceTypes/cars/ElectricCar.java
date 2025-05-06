@@ -2,7 +2,7 @@ package a_oop.polymorphism_referenceTypes.cars;
 
 public class ElectricCar extends Car {
     private double avgPerCharge;
-    private int batterySize;
+    private final int batterySize = 6;
 
     public ElectricCar(String description) {
         super(description);
