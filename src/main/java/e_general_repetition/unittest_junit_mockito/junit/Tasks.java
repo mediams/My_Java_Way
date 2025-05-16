@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Tasks {
-    public static List<Integer> searchDuplicate(int[] arr1, int[] arr2) {
+    public static int[] searchDuplicate(int[] arr1, int[] arr2) {
         if (arr1 == null || arr2 == null) throw new RuntimeException("Array is null");
         int[] firstArr;
         int[] secondArr;
@@ -28,6 +28,12 @@ public class Tasks {
                 }
             }
         }
-        return inputArr;
+
+        int[] result = new int[inputArr.size()];
+        int i = 0;
+        for (int num : inputArr) {
+            result[i++] = num;
+        }
+        return result;
     }
 }
