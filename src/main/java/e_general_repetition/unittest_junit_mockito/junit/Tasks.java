@@ -1,7 +1,9 @@
 package e_general_repetition.unittest_junit_mockito.junit;
 
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 
 public class Tasks {
     public static int[] searchDuplicate(int[] arr1, int[] arr2) {
@@ -32,6 +34,21 @@ public class Tasks {
         int[] result = new int[inputArr.size()];
         int i = 0;
         for (int num : inputArr) {
+            result[i++] = num;
+        }
+        return result;
+    }
+
+    public static int[] deleteDuplicates(int[] arr) {
+        if (arr == null) throw new RuntimeException("Array is null");
+
+        Set<Integer> set = new LinkedHashSet<>();
+        for (int num : arr) {
+            set.add(num);
+        }
+        int[] result = new int[set.size()];
+        int i = 0;
+        for (int num : set) {
             result[i++] = num;
         }
         return result;

@@ -60,4 +60,25 @@ class TasksTest {
 
         assertArrayEquals(new int[]{1, 1, 3, 3}, Tasks.searchDuplicate(arr1, arr2));
     }
+
+    @Test
+    void deleteDuplicates() {
+        int[] arr = {1, 2, 1, 3, 2, 4, 5, 8};
+
+        assertArrayEquals(new int[]{1, 2, 3, 4, 5, 8}, Tasks.deleteDuplicates(arr));
+    }
+
+    @Test
+    void deleteDuplicatesIsEmpty() {
+        int[] arr = {};
+
+        assertArrayEquals(new int[]{}, Tasks.deleteDuplicates(arr));
+    }
+
+    @Test
+    void deleteDuplicatesIsNull() {
+        int[] arr = null;
+
+        assertThrows(RuntimeException.class, () -> Tasks.deleteDuplicates(arr));
+    }
 }
