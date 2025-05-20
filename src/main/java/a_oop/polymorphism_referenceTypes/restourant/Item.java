@@ -31,7 +31,7 @@ public class Item {
     }
 
     public void setSize(String size) {
-        this.size = size;
+        this.size = size.toUpperCase();
     }
 
     public void printItem() {
@@ -44,6 +44,4 @@ public class Item {
         }
         return name;
     }
-
-
 }
