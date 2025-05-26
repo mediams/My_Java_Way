@@ -15,6 +15,9 @@ public class Varargs {
 
         System.out.println("-".repeat(30));
         printText(String.join(" ", strings));
+
+        System.out.println("-".repeat(30));
+        printText();
     }
 
     private static void printText(String... args) {
