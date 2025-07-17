@@ -62,5 +62,25 @@ public class MoreLists {
 
         var array = integerArrayList.toArray(new Integer[integerArrayList.size()]);
         System.out.println(Arrays.toString(array));
+
+        String[] originalArray = new String[]{"First", "Second", "Third"};
+        var originalLIst = Arrays.asList(originalArray);
+
+        originalLIst.set(0, "new");
+        System.out.println("list: " + originalLIst);
+        System.out.println("array: " + Arrays.toString(originalArray));
+
+        originalLIst.sort(Comparator.naturalOrder());
+        System.out.println("list: " + originalLIst);
+        System.out.println("array: " + Arrays.toString(originalArray));
+
+        List<String> newList = Arrays.asList("Sunday", "Monday", "Tuesday");
+        System.out.println(newList);
+
+        ArrayList<String> stringList = new ArrayList<>(List.of("One", "Two", "Three"));
+        String[] stringArray = stringList.toArray(new String[stringList.size()]);
+        String[] stringArray2 = stringList.toArray(new String[0]);
+        System.out.println(Arrays.toString(stringArray));
+
     }
 }
