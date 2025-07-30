@@ -1,6 +1,7 @@
 package b_collections_framework.LinkedList_Implementation;
 
 import java.util.LinkedList;
+import java.util.ListIterator;
 
 public class TaskLinkedList {
     public static void main(String[] args) {
@@ -17,6 +18,10 @@ public class TaskLinkedList {
 
         removeMoreElements(placesToVisit);
         System.out.println(placesToVisit);
+
+        getElements(placesToVisit);
+
+        printItenerary(placesToVisit);
     }
 
     private static void addMoreElement(LinkedList<String> list) {
@@ -62,9 +67,52 @@ public class TaskLinkedList {
         System.out.println(list);
         list.push("Toowoomba");
         System.out.println(list);
+        list.push("Alice Springs");
+        list.addFirst("Darwin");
+        list.addLast("Hobart");
 
         String p4 = list.pop();
         System.out.println(p4 + " was removed");
+
+    }
+
+    private static void getElements(LinkedList<String> list) {
+        System.out.println("Retrieved Element " + list.get(1));
+        System.out.println("First Element " + list.getFirst());
+        System.out.println("Last Element " + list.getLast());
+
+        System.out.println("Sydney is at position: " + list.indexOf("Sydney"));
+
+//        Queue retrieval method
+        System.out.println("Element from element() = " + list.element());
+//        Queue retrieval method
+        System.out.println("Element from peek = " + list.peek());
+        System.out.println("Element from peek = " + list.peekFirst());
+        System.out.println("Element from peek = " + list.peekLast());
+
+    }
+
+    private static void printItenerary(LinkedList<String> list) {
+        System.out.println("Trip starts at: " + list.getFirst());
+
+
+//        for (int i = 1; i < list.size(); i++) {
+//            System.out.println(" --> From: " + list.get(i - 1) + " to " + list.get(i));
+//        }
+        String previostown = list.getFirst();
+//        for (String i : list) {
+//            System.out.println(" --> From: " + previostown + " to " + i);
+//            previostown = i;
+//
+//        }
+
+        ListIterator<String> iterator = list.listIterator(1);
+        while (iterator.hasNext()) {
+            String town = iterator.next();
+            System.out.println(" --> From: " + previostown + " to " + town);
+            previostown = town;
+        }
+        System.out.println("Trip ends at: " + list.getLast());
 
     }
 }
