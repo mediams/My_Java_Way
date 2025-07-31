@@ -22,6 +22,9 @@ public class TaskLinkedList {
         getElements(placesToVisit);
 
         printItenerary(placesToVisit);
+
+        testIterator(placesToVisit);
+        printItenerary(placesToVisit);
     }
 
     private static void addMoreElement(LinkedList<String> list) {
@@ -114,5 +117,19 @@ public class TaskLinkedList {
         }
         System.out.println("Trip ends at: " + list.getLast());
 
+    }
+
+    private static void testIterator(LinkedList<String> list) {
+        var iterator = list.listIterator();
+        while (iterator.hasNext()) {
+            if (iterator.next().equals("Moscow")) {
+                iterator.add("New city");
+            }
+        }
+
+        var iterator2 = list.listIterator(2);
+        while (iterator2.hasPrevious()) {
+            System.out.println(iterator2.previous());
+        }
     }
 }
