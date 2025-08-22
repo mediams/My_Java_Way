@@ -56,10 +56,10 @@ public class Bank {
         if (isPrint) {
             int i = 1;
             for (Customer customer : customers) {
-                System.out.println("Customer: " + customer.name() + "[" + i++ + "]");
+                System.out.println("Customer: " + customer.getName() + "[" + i++ + "]");
                 System.out.println("Transactions");
                 int t = 1;
-                for (double transaction : customer.transactions()) {
+                for (double transaction : customer.getTransactions()) {
                     System.out.println("[" + t++ + "] Amount " + transaction);
                 }
             }
@@ -67,7 +67,7 @@ public class Bank {
         if (!isPrint) {
             int i = 1;
             for (Customer customer : customers) {
-                System.out.println("Customer: " + customer.name() + "[" + i++ + "]");
+                System.out.println("Customer: " + customer.getName() + "[" + i++ + "]");
             }
         }
         return true;

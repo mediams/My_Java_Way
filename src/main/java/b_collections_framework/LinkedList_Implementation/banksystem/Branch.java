@@ -27,7 +27,7 @@ public class Branch {
 
     private Customer findCustomer(String name) {
         for (Customer customer : customers) {
-            if (customer.name().equals(name)) {
+            if (customer.getName().equals(name)) {
                 return customer;
             }
         }
