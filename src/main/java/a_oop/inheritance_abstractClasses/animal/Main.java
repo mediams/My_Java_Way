@@ -16,8 +16,13 @@ public class Main {
         animals.add(new Dog("Mops", "small", 50));
         animals.add(new Fish("Barracuda", "big", 75));
 
+        animals.add((new Horse("Clydesdale", "large", 1000)));
+
         for (Animal animal : animals) {
             doAnimalStuff(animal);
+            if (animal instanceof Mammal currentMammal) { //New syntax (Java 16+) Pattern Matching
+                currentMammal.shedHair();
+            }
         }
     }
 
