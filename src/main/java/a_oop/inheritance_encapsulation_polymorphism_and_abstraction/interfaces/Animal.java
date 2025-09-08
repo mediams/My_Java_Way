@@ -9,6 +9,12 @@ enum FlightStages implements Trackable {
             System.out.println("Monitoring " + this);
         }
     }
+
+    public FlightStages getNextStage() {
+        FlightStages[] allStages = values();
+        int i = (ordinal() + 1) % allStages.length;
+        return allStages[i];
+    }
 }
 
 interface OrbitEarth extends FlightEnable {
@@ -25,6 +31,16 @@ interface FlightEnable {
     void land();
 
     void fly();
+
+    default FlightStages transaction(FlightStages stage) {
+//        System.out.println("transaction not implemented on " + getClass().getSimpleName());
+//        return null;
+        FlightStages nextStage = stage.getNextStage();
+        System.out.println("Transitioning from " + stage + " to " + nextStage);
+        return nextStage;
+    }
+
+
 }
 
 interface Trackable {
