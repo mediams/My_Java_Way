@@ -3,6 +3,10 @@ package a_oop.inheritance_encapsulation_polymorphism_and_abstraction.interfaces;
 public class Test {
     public static void main(String[] args) {
         inFlight(new Jet());
+
+//        OrbitEarth.log("Testing " + new Satellite());
+
+        orbit(new Satellite());
     }
 
     private static void inFlight(FlightEnable flightEnable) {
@@ -12,6 +16,12 @@ public class Test {
         if (flightEnable instanceof Trackable trackable) {
             trackable.track();
         }
+        flightEnable.land();
+    }
+
+    private static void orbit(OrbitEarth flightEnable) {
+        flightEnable.takeOff();
+        flightEnable.fly();
         flightEnable.land();
     }
 }
